@@ -1,14 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Psmapp</title>
-    <%= csrf_meta_tags %>
-
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/3a83e4632b.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,500i,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
-
   <body>
+    <div class="logo-panel">
+      <%= link_to root_path, class: "inline" do %>
+        <%= image_tag 'psmlogo', class: "img-fluid", size: "270"%>
+      <% end %>
+      <h1 class="inline company-name">ПЕТРОСПЕЦМОНТАЖ</h1>
+      
+    </div>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            О КОМПАНИИ
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="history.html">История компании</a>
+              <a class="dropdown-item" href="management.html">Коллектив</a>
+              <a class="dropdown-item" href="documents.html">Документы</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ДЕЯТЕЛЬНОСТЬ
+            </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="services/1_design.html">Проектирование и дизайн</a>
+              <a class="dropdown-item" href="services/2_external_engineering_networks.html">Наружные инженерные сети</a>
+              <a class="dropdown-item" href="services/3_internal_engineering_networks.html">Внутренние инженерные сети</a>
+              <a class="dropdown-item" href="services/4_industrial_and_civil_construction.html">Промышленное и гражданское строительство</a>
+              <a class="dropdown-item" href="services/5_restoration_and_reconstruction.html">Реставрация и реконструкция</a>
+              <a class="dropdown-item" href="services/6_finishing_works.html">Отделочные работы</a>
+              <a class="dropdown-item" href="services/7_suburban_construction.html">Загородное строительство</a>
+              <a class="dropdown-item" href="services/8_landscaping_and_road_construction.html">Благоустройство и дорожное строительство</a>
+              <a class="dropdown-item" href="services/9_facade_works.html">Фасадные работы</a>
+              <a class="dropdown-item" href="services/10_banking_systems_and_fireproof_structures.html">Банковские системы и противопожарные конструкции</a>
+              <a class="dropdown-item" href="services/11_socially_significant_activity.html">Социально-значимая деятельность</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">ОБЪЕКТЫ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partners_customers.html">ПАРТНЕРЫ И ЗАКАЗЧИКИ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">КОНТАКТЫ</a>
+          </li>
+        </ul>
+          <div class="navbar-right">
+              <i class="fa fa-phone" aria-hidden="true"></i> (812) 318-36-46
+          </div>
+      </div>
+    </nav>
+
+
     <%= yield %>
+    
+
+  <!-- FOOTER -->
+   <footer class="footer">
+      <div class="container">
+            <a href="#" class="footer-icon"><i class="fa fa-vk fa-lg" aria-hidden="true"></i></a>
+            <a href="#" class="footer-icon"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+            <a href="#" class="footer-icon"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+        <span class="footer-text" style="float: right">© 2006-2017 Официальный сайт ООО "Петроспецмонтаж". Все права на изображения и тексты принадлежат их авторам.</span>
+      </div>
+    </footer>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
