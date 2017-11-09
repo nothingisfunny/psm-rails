@@ -67,14 +67,17 @@
             <%= link_to "ОТЗЫВЫ", reviews_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacts.html">КОНТАКТЫ</a>
+            <%= link_to "КОНТАКТЫ", contact_path, class: "nav-link" %>
           </li>
+
         </ul>
           <div class="navbar-right">
               <i class="fa fa-phone" aria-hidden="true"></i> (812) 318-36-46
           </div>
       </div>
     </nav>
+
+    <div id="red-border"></div>
     <%= yield %>
     
 
