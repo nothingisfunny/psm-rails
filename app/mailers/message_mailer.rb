@@ -1,6 +1,6 @@
 class MessageMailer < ActionMailer::Base
 
-  default from: "Your Mailer <info@psm-spb.com>"
+  default from: "Your Mailer <noreply@psm-spb.com>"
   default to: "Your Name <info@psm-spb.com>"
 
   def new_message(message)

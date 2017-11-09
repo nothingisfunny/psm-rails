@@ -48,17 +48,9 @@
             ДЕЯТЕЛЬНОСТЬ
             </a>
            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="services/1_design.html">Проектирование и дизайн</a>
-              <a class="dropdown-item" href="services/2_external_engineering_networks.html">Наружные инженерные сети</a>
-              <a class="dropdown-item" href="services/3_internal_engineering_networks.html">Внутренние инженерные сети</a>
-              <a class="dropdown-item" href="services/4_industrial_and_civil_construction.html">Промышленное и гражданское строительство</a>
-              <a class="dropdown-item" href="services/5_restoration_and_reconstruction.html">Реставрация и реконструкция</a>
-              <a class="dropdown-item" href="services/6_finishing_works.html">Отделочные работы</a>
-              <a class="dropdown-item" href="services/7_suburban_construction.html">Загородное строительство</a>
-              <a class="dropdown-item" href="services/8_landscaping_and_road_construction.html">Благоустройство и дорожное строительство</a>
-              <a class="dropdown-item" href="services/9_facade_works.html">Фасадные работы</a>
-              <a class="dropdown-item" href="services/10_banking_systems_and_fireproof_structures.html">Банковские системы и противопожарные конструкции</a>
-              <a class="dropdown-item" href="services/11_socially_significant_activity.html">Социально-значимая деятельность</a>
+              <% Service.all.each do |service| %>
+                <%= link_to service.name, service_path(service.id), class: "dropdown-item"%>
+              <% end %>
             </div>
           </li>
 
@@ -69,6 +61,9 @@
             <a class="nav-link" href="partners_customers.html">ПАРТНЕРЫ И ЗАКАЗЧИКИ</a>
           </li>
           <li class="nav-item">
+            <%= link_to "ОТЗЫВЫ", reviews_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="contacts.html">КОНТАКТЫ</a>
           </li>
         </ul>
@@ -77,8 +72,6 @@
           </div>
       </div>
     </nav>
-
-
     <%= yield %>
     
 

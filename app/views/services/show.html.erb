@@ -1,0 +1,25 @@
+<div class="container-fluid">
+      <div class="row">
+         <div class="col-sm-4">
+          <ul class="nav flex-column">
+            <% Service.all.each do |service| %>
+            <li class="nav-item">
+              <%= link_to service.name, service_path(id: service.id), class: "nav-link active side-menu" %>
+             
+            </li>
+            <% end %>
+          </ul>
+        </div>
+        <div class="col-sm-8">
+
+          <h2><%= @service.name %></h2>
+          <ul>
+            <% @service.bullet_points.each do |service| %>
+              <li><%=service %></li>
+            <% end %>
+          
+          </ul>
+          <p><%= @service.description %></p>
+        </div>
+      </div>
+    </div>
