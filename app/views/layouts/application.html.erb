@@ -58,7 +58,10 @@
             <a class="nav-link" href="projects.html">ОБЪЕКТЫ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="partners_customers.html">ПАРТНЕРЫ И ЗАКАЗЧИКИ</a>
+            <%= link_to "ПАРТНЕРЫ", partners_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "ЗАКАЗЧИКИ", customers_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "ОТЗЫВЫ", reviews_path, class: "nav-link" %>
