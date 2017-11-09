@@ -3,4 +3,10 @@ class WelcomeController < ApplicationController
   end
   def contact
   end
+  def about
+  end
+  def team
+  end
+  def documents
+  end
 end

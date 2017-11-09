@@ -38,9 +38,10 @@
             О КОМПАНИИ
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="history.html">История компании</a>
-              <a class="dropdown-item" href="management.html">Коллектив</a>
-              <a class="dropdown-item" href="documents.html">Документы</a>
+              <%= link_to "История компании", about_path, class: "dropdown-item" %>
+              <%= link_to "Коллектив", team_path, class: "dropdown-item" %>
+              <%= link_to "Документы", documents_path, class: "dropdown-item" %>
+              
             </div>
           </li>
           <li class="nav-item dropdown">
