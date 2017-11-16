@@ -20,10 +20,6 @@
 
 $(document).ready(function(){
   $('form').submit(function() {
-    //close modal  
-    $('.bd-example-modal-lg').modal('hide');
-    $('body').removeClass('modal-open');
-    $('.modal-backdrop').remove();
 
     var valuesToSubmit = {};
     $.each($('.form-control'), function(i, field) {
@@ -37,6 +33,11 @@ $(document).ready(function(){
           data: {'message': valuesToSubmit},
           dataType: "JSON"
       })
+          //close modal  
+      $('.bd-example-modal-lg').modal('hide');
+      $('body').removeClass('modal-open');
+      $('.modal-backdrop').remove();
+
       return false; // prevents normal behaviour
     });
 })
