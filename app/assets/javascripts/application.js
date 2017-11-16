@@ -16,3 +16,29 @@
 //= require tether
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+$(document).ready(function(){
+  $('form').submit(function() {
+    //close modal  
+    $('.bd-example-modal-lg').modal('hide');
+    $('body').removeClass('modal-open');
+    $('.modal-backdrop').remove();
+
+    var valuesToSubmit = {};
+    $.each($('.form-control'), function(i, field) {
+        valuesToSubmit[field.name] = field.value;
+    });
+    console.log(valuesToSubmit);
+      $.ajax({
+          type: "POST",
+          url: $(this).attr('action'), //sumbits it to the given url of the form
+          data: {'message': valuesToSubmit},
+          dataType: "JSON"
+      })
+      return false; // prevents normal behaviour
+    });
+    
+
+})
+      

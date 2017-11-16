@@ -1,0 +1,39 @@
+
+          <!-- ASK A QUESTION BUTTON -->
+    <div class="project-container">
+        <button data-toggle="modal" data-target=".bd-example-modal-lg" class="contact-button btn btn-primary">
+          <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>   Задать Вопрос</button>
+          <!-- Large modal -->
+          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="close-modal">×</span>
+              </button>
+              <div class="container">
+              
+                <form class="contact-form" action="/contact_us">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Имя</label>
+                    <input type="name" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Электронная почта</label>
+                    <input type="email" name="email"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Телефон</label>
+                    <input type="text" name="phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Ваше сообщение</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3" name="content"></textarea>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+              </div>
+              </div>
+             </div>
+          </div>
+        </div>

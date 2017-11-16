@@ -211,10 +211,11 @@ span.close-modal{
   padding: 20px;
 }
 
-.contact-button{
+.contact-button, .contact-button:hover{
   position:absolute;
   top:0;
   right:0;
+  border: none
 }
 
 
