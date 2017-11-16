@@ -29,16 +29,16 @@ $(document).ready(function(){
     $.each($('.form-control'), function(i, field) {
         valuesToSubmit[field.name] = field.value;
     });
+
     console.log(valuesToSubmit);
       $.ajax({
           type: "POST",
-          url: $(this).attr('action'), //sumbits it to the given url of the form
+          url: '/contact_us', //sumbits it to the given url of the form
           data: {'message': valuesToSubmit},
           dataType: "JSON"
       })
       return false; // prevents normal behaviour
     });
-    
-
 })
+
       
