@@ -40,6 +40,8 @@ ActiveRecord::Schema.define(version: 20171109064351) do
   end
 
   create_table "reviews", force: :cascade do |t|
+    t.string "name"
+    t.string "picture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
