@@ -234,3 +234,42 @@ reviews = Review.create([
 
 
 ])
+
+projects = Partner.create([
+  {
+    name: "Снабстрой",
+    description:  "Оптово-розничная торговля строительными и отделочными материалами",
+    website: "https://www.spbstroy.ru",
+    picture: "partners/snabstroi1"
+  },
+  {
+    name: "Максидом",
+    description:  "Сеть гипермаркетов товаров для обустройства дома, ремонта и строительства",
+    website: "https://www.maxidom.ru/",
+    picture: "partners/maksidom"
+  },
+  {
+    name: "СтройТраст",
+    description:  "Оптовые поставки строительных материалов и комплектация строительных объектов",
+    website: "http://stroy-trast.ru/kontakty.html",
+    picture: "partners/stroytrast"
+  },
+  {
+    name: "Петрович",
+    description:  "Сеть строительных торговых центров",
+    website: "https://petrovich.ru/",
+    picture: "partners/petrovich"
+  },
+  {
+    name: "Грузовичкоф",
+    description:  "Грузоперевозки по Санкт-Петербургу и Ленинградской области",
+    website: "https://gruzovichkof.ru/",
+    picture: "partners/gruzovichkof"
+  },
+  {
+    name: "СитиЭнергоРент",
+    description:  "Аренда, продажа и обслуживание дизельных генераторов",
+    website: "http://dizel-rent.ru/",
+    picture: "partners/citienergorent"
+  }
+])  
