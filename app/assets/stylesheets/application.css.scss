@@ -232,7 +232,9 @@ span.close-modal{
   padding-bottom: 1em;
 }
 
-
+.map{
+  max-width: 100%;
+}
 
 @media (max-width: 575px) {
   .company-name{
@@ -244,4 +246,14 @@ span.close-modal{
   .contact-button-small{
     visibility: visible;
   }
+  
 }
+
+@media (min-width: 992px) {
+  .map{
+    max-width: 50%;
+  }
+}
+
+
+
