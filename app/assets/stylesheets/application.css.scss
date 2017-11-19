@@ -217,11 +217,23 @@ span.close-modal{
   position:absolute;
   top:0;
   right:0;
-  border: none
+  border: none;
 }
-
+.contact-button-small{
+  visibility: hidden;
+  position:absolute;
+  top:0;
+  right:0;
+  border: none;
+}
 @media (max-width: 575px) {
   .company-name{
     display:none;
+  }
+  .contact-button{
+    display:none;
+  }
+  .contact-button-small{
+    visibility: visible;
   }
 }
