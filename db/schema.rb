@@ -41,7 +41,8 @@ ActiveRecord::Schema.define(version: 20171109064351) do
 
   create_table "reviews", force: :cascade do |t|
     t.string "name"
-    t.string "picture"
+    t.string "description"
+    t.string "document"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

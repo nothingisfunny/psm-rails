@@ -6,31 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/3a83e4632b.js"></script>
-    <!-- Bootstrap CSS -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application' %>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,500i,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <div class="logo-panel">
-      <%= render partial: "welcome/contact-button" %>
-      <%= link_to root_path, class: "inline" do %>
-        <%= image_tag 'psmlogo', class: "img-fluid", size: "200" %>
-      <% end %>
-      <h1 class="inline company-name">ПЕТРОСПЕЦМОНТАЖ</h1>
-      
-    </div>
+    
     <!-- NAVBAR -->
+    <%= render partial: "welcome/contact-button" %>
+       <%= link_to root_path, class: "logo-panel navbar-brand" do %>
+          <%= image_tag 'psmlogo', class: "img-fluid", size: "200" %>
+          <h1 class="company-name navbar-brand">ПЕТРОСПЕЦМОНТАЖ</h1>
+        <% end %> 
 
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        
+      <div class="navbar-brand" style="min-height: 40px">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="z-index: 10000" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>    
       
-      
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown">
@@ -55,6 +52,7 @@
             </div>
           </li>
 
+
           <li class="nav-item">
             <%= link_to "ОБЪЕКТЫ", projects_path, class: "nav-link" %>
           </li>
@@ -71,6 +69,9 @@
             <%= link_to "КОНТАКТЫ", contact_path, class: "nav-link" %>
           </li>
 
+
+
+ 
         </ul>
           <div class="navbar-right">
               <i class="fa fa-phone" aria-hidden="true"></i> (812) 318-36-46
@@ -91,6 +92,6 @@
         <span class="footer-text" style="float: right">© 2006-2017 Официальный сайт ООО "Петроспецмонтаж". Все права на изображения и тексты принадлежат их авторам.</span>
       </div>
     </footer>
-   
   </body>
+
 </html>

@@ -185,6 +185,7 @@ span.close-modal{
 .logo-panel{
   display: block;
   text-align: center;
+  width:100%;
   background-color: #f7f7f7;
 }
 
@@ -197,6 +198,7 @@ span.close-modal{
   font-size: 3rem;
   vertical-align: middle;
 }
+
 
 .btn-primary{
   background-color: #ce322d;
@@ -218,4 +220,8 @@ span.close-modal{
   border: none
 }
 
-
+@media (max-width: 575px) {
+  .company-name{
+    display:none;
+  }
+}
