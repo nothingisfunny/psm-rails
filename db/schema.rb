@@ -16,6 +16,10 @@ ActiveRecord::Schema.define(version: 20171109064351) do
   enable_extension "plpgsql"
 
   create_table "customers", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.string "picture"
+    t.string "website"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -56,6 +60,7 @@ ActiveRecord::Schema.define(version: 20171109064351) do
     t.text "bullet_points", default: [], array: true
     t.text "description"
     t.string "name"
+    t.text "images", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

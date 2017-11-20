@@ -11,7 +11,8 @@ services = Service.create([
   {
     name: "Проектирование и дизайн", 
     bullet_points: ["обследования и изыскательные работы", "разработка проектной и рабочей документации", "разработка дизайн проектов", "сметная документация", "генпроектные работы"],
-    description: "При разработке проектов специалистами фирмы используются новейшие инструменты проектирования, позволяющие с максимальной точностью и реалистичностью предоставить работу заказчику. Использование новейших технологий и BIM проектирования позволяют добиться максимального результата в кратчайшие сроки."
+    description: "При разработке проектов специалистами фирмы используются новейшие инструменты проектирования, позволяющие с максимальной точностью и реалистичностью предоставить работу заказчику. Использование новейших технологий и BIM проектирования позволяют добиться максимального результата в кратчайшие сроки.",
+    images: ["services/proektirovanie/1", "services/proektirovanie/2", "services/proektirovanie/3", "services/proektirovanie/4", "services/proektirovanie/5", "services/proektirovanie/6", "services/proektirovanie/7", "services/proektirovanie/8", "services/proektirovanie/9", "services/proektirovanie/10", "services/proektirovanie/11", "services/proektirovanie/12", "services/proektirovanie/13", "services/proektirovanie/14", "services/proektirovanie/15", "services/proektirovanie/16", "services/proektirovanie/17", "services/proektirovanie/18", "services/proektirovanie/19", "services/proektirovanie/20", "services/proektirovanie/21", "services/proektirovanie/22", "services/proektirovanie/23", "services/proektirovanie/24", "services/proektirovanie/25", "services/proektirovanie/26", "services/proektirovanie/27"]
     },
   {
     name: "Наружные инженерные сети",
@@ -273,3 +274,56 @@ projects = Partner.create([
     picture: "partners/citienergorent"
   }
 ])  
+
+
+customers = Customer.create([
+  {
+    name: "Пулково",
+    description:  "Международный аэропорт федерального значения в Северо-Западном федеральном округе России",
+    website: "https://www.pulkovoairport.ru/",
+    picture: "customers/pulkovo"
+  },
+  {
+    name: "Пятерочка",
+    description:  "Одна из крупнейших сетей продуктовых магазинов",
+    website: "https://5ka.ru/",
+    picture: "customers/5ka"
+  },
+  {
+    name: "Большой Гостиный Двор",
+    description: "Торговый комплекс с более чем двухсотлетней историей в самом центре Петербурга",
+    website: "http://www.bgd.ru/",
+    picture: "customers/bgd"
+  },
+  {
+    name: "Музей-заповедник Кижи",
+    description:  "Государственный историко-архитектурный музей «Кижи»",
+    website: "http://kizhi.karelia.ru/",
+    picture: "customers/kizhi"
+  },
+  {
+    name: "РЖД",
+    description:  "Российские железные дороги",
+    website: "http://www.rzd.ru/",
+    picture: "customers/rzd"
+  },
+  {
+    name: "Банк Русь",
+    description:  "Оренбургский ипотечный коммерческий Банк «Русь»",
+    website: "http://www.bankrus.ru/",
+    picture: "customers/rusbank"
+  },
+  {
+    name: "Университет Гражданской Авиациии",
+    description:  "Университет Гражданской Авиации",
+    website: "hhttp://spbguga.ru",
+    picture: "customers/aviationuniversity"
+  },
+  {
+    name: "Банк Санкт-Петербург",
+    description:  "Коммерческий банк основанный в 1990 году",
+    website: "https://www.bspb.ru/",
+    picture: "customers/bankspb"
+  }
+  
+])

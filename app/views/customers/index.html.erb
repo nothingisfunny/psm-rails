@@ -1,15 +1,15 @@
 <div class="jumbotron">
   <div class="container">
     
-    <h2>Наши партнеры</h2>
+    <h2>Наши заказчики</h2>
 
     <div class="row gallery">
-      <% Partner.all.each do |partner| %>
+      <% Customer.all.each do |customer| %>
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="<%=partner.website%>">
-                <%=image_tag partner.picture, class: 'img-fluid' %>
+            <a class="thumbnail" href="<%=customer.website%>" target= "_blank" >
+                <%=image_tag customer.picture, class: 'img-fluid'%>
             </a>
-            <p><%= partner.description %></p> 
+            <p><%= customer.description %></p> 
         </div>
       <% end %>
     </div>
