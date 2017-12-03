@@ -15,69 +15,62 @@
     
     <!-- NAVBAR -->
     <%= render partial: "welcome/contact-button" %>
-       <%= link_to root_path, class: "logo-panel navbar-brand" do %>
-          <%= image_tag 'psmlogo', class: "img-fluid", size: "200" %>
-          <h1 class="company-name navbar-brand">ПЕТРОСПЕЦМОНТАЖ</h1>
-        <% end %> 
+       
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag 'psmlogo', class: "img-fluid", size: "150" %>
+    <% end %> 
+    
 
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-        
-      <div class="navbar-brand" style="min-height: 40px">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="z-index: 10000" >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>    
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            О КОМПАНИИ
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <%= link_to "История компании", about_path, class: "dropdown-item" %>
-              <%= link_to "Коллектив", team_path, class: "dropdown-item" %>
-              <%= link_to "Документы", documents_path, class: "dropdown-item" %>
-              
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            ДЕЯТЕЛЬНОСТЬ
-            </a>
-           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <% Service.all.each do |service| %>
-                <%= link_to service.name, service_path(service.id), class: "dropdown-item"%>
-              <% end %>
-            </div>
-          </li>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              О КОМПАНИИ
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <%= link_to "История компании", about_path, class: "dropdown-item" %>
+                <%= link_to "Коллектив", team_path, class: "dropdown-item" %>
+                <%= link_to "Документы", documents_path, class: "dropdown-item" %>
+                
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ДЕЯТЕЛЬНОСТЬ
+              </a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <% Service.all.each do |service| %>
+                  <%= link_to service.name, service_path(service.id), class: "dropdown-item"%>
+                <% end %>
+              </div>
+            </li>
 
-
-          <li class="nav-item">
-            <%= link_to "ОБЪЕКТЫ", projects_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "ПАРТНЕРЫ", partners_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "ЗАКАЗЧИКИ", customers_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "ОТЗЫВЫ", reviews_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "КОНТАКТЫ", contact_path, class: "nav-link" %>
-          </li>
-
-
-
- 
-        </ul>
-          <div class="navbar-right">
-              <i class="fa fa-phone" aria-hidden="true"></i> (812) 318-36-46
-          </div>
+            <li class="nav-item">
+              <%= link_to "ОБЪЕКТЫ", projects_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "ПАРТНЕРЫ", partners_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "ЗАКАЗЧИКИ", customers_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "ОТЗЫВЫ", reviews_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "КОНТАКТЫ", contact_path, class: "nav-link" %>
+            </li>
+      </ul>
+      <div class="nav-link navbar-right">
+        <i class="fa fa-phone" aria-hidden="true"></i> (812) 318-36-46
       </div>
-    </nav>
+      
+    </div>
+  </nav>
       
     <div id="red-border"></div>
     <%= yield %>
