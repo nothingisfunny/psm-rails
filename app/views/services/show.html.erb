@@ -22,16 +22,16 @@
     <p><%= @service.description %></p>
 
     <!-- CAROUSEL -->
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="max-width: 50%">
-      <div class="carousel-inner" role="listbox">
+    <div id="carouselExampleControls" class="carousel slide services" data-ride="carousel">
+      <div class="carousel-inner services" role="listbox">
         
         <% @service.images.each_with_index do |image, index| %>
           <% if index == 0 %>
-            <div class="carousel-item active">
+            <div class="carousel-item services active">
               <%= image_tag image, class: "d-block img-fluid"%>
             </div>
           <% else %>
-            <div class="carousel-item">
+            <div class="carousel-item services">
               <%= image_tag image, class: "d-block img-fluid"%>
             </div>
           <% end %>
