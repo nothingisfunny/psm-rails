@@ -201,6 +201,7 @@ span.close-modal{
 }
 
 .contact-button, .contact-button:hover{
+  z-index: 1000;
   position:absolute;
   top:0;
   right:0;
