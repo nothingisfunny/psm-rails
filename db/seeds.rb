@@ -260,7 +260,7 @@ reviews = Review.create([
 
 ])
 
-projects = Partner.create([
+partners = Partner.create([
   {
     name: "Снабстрой",
     description:  "Оптово-розничная торговля строительными и отделочными материалами",
