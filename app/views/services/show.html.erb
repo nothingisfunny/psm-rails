@@ -25,7 +25,7 @@
     <div id="carouselExampleControls" class="carousel slide services" data-ride="carousel">
       <div class="carousel-inner services" role="listbox">
         
-        <% @service.images.each_with_index do |image, index| %>
+        <!--<% @service.images.each_with_index do |image, index| %>
           <% if index == 0 %>
             <div class="carousel-item services active">
               <%= image_tag image, class: "d-block img-fluid"%>
@@ -35,7 +35,11 @@
               <%= image_tag image, class: "d-block img-fluid"%>
             </div>
           <% end %>
-        <% end %>
+        <% end %> -->
+        <div class="carousel-item services active">
+          <img src="carousel.jpg", class: "d-block img-fluid">
+        </div>
+
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
