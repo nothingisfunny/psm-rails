@@ -7,8 +7,20 @@
 .carousel-inner.services{
   background-color: grey;
 }
+.carousel-control-center{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  left: 15%;
+  right: 15%;
+}
 
-.carousel-item.services{
-  height: 300px;
-  wifth: auto;
+.carousel-control-center:focus, .carousel-control-center:hover{
+  color: transparent;
+  outline: none;
+}
+
+.modal-lg{
+  max-width: 80%;
 }
