@@ -22,10 +22,14 @@
 }
 
 .modal-lg{
-  max-width: 80%;
+  min-width: 70%;
 }
 
 .carousel.services{
-  max-width: 100%;
+  width: auto;
   margin: 0 auto;
+}
+
+.img-fluid.gallery{
+  min-width: 100%;
 }
