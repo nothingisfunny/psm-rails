@@ -2,34 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-//CAROUSEL
-.carousel-inner.services{
-  background-color: grey;
-}
-.carousel-control-center{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  left: 15%;
-  right: 15%;
+.item{
+  margin-bottom: 20px;
 }
 
-.carousel-control-center:focus, .carousel-control-center:hover{
-  color: transparent;
-  outline: none;
+.image-wrapper {
+  overflow: hidden;
 }
-
-.modal-lg{
-  min-width: 70%;
+img {
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
 }
-
-.carousel.services{
-  width: auto;
-  margin: 0 auto;
-}
-
-.img-fluid.gallery{
-  min-width: 100%;
+.image-wrapper:hover img {
+  transform: scale(1.2);
 }

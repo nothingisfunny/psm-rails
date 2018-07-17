@@ -11,98 +11,24 @@
       </ul>
     </div>
     <div class="col-sm-8">
-
-    <h2><%= @service.name %></h2>
-    <ul>
-      <% @service.bullet_points.each do |service| %>
-        <li><%=service %></li>
-      <% end %>
-    
-    </ul>
-    <p><%= @service.description %></p>
-    <div class="carousel-wrapper">
-    <!-- CAROUSEL -->
-    <div id="carouselExampleControls" class="carousel slide services" data-ride="carousel">
-      <div class="carousel-inner services" role="listbox">
-        
-        <% @service.images.each_with_index do |image, index| %>
-          <% if index == 0 %>
-            <div class="carousel-item services active">
-              <%= image_tag image, class: "d-block img-fluid gallery"%>
-            </div>
-          <% else %>
-            <div class="carousel-item services">
-              <%= image_tag image, class: "d-block img-fluid gallery"%>
-            </div>
-          <% end %>
+      <h2><%= @service.name %></h2>
+      <ul>
+        <% @service.bullet_points.each do |service| %>
+          <li><%=service %></li>
+        <% end %>
+      </ul>
+      <p><%= @service.description %></p>
+      <div class="card-columns">
+        <% @service.images.each do |image| %>
+          <div class="item image-wrapper">
+            <a href="" data-fancybox="images" data-type="image">
+              <%= image_tag image, class: "d-block img-fluid"%>
+            </a> 
+          </div>
         <% end %>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-       <a class="carousel-control-center" href="#carouselExampleControls" role="button" data-toggle="modal" data-target="#exampleModalCenter">
-        <span class="sr-only">Modal</span>
-      </a>
-      
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
-  </div>
-
-        <!-- Button trigger modal -->
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle"><%= @service.name %></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            
-          <div id="carouselGallery" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner services" role="listbox">
-              
-              
-                  <div class="carousel-item services active">
-                    <%= image_tag "https://imgur.com/NHpcJO2.jpg", class: "d-block img-fluid gallery"%>
-                  </div>
-               
-                  <div class="carousel-item services">
-                    <%= image_tag "https://imgur.com/U1iLZ9n.jpg", class: "d-block img-fluid gallery"%>
-                  </div>
-
-                   <div class="carousel-item services">
-                    <%= image_tag "https://imgur.com/r26S4GB.jpg", class: "d-block img-fluid gallery"%>
-                  </div>
-
-               
-              
-            </div>
-            <a class="carousel-control-prev" href="#carouselGallery" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            
-            <a class="carousel-control-next" href="#carouselGallery" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
   </div>
 </div>
+
+
