@@ -21,7 +21,7 @@
       <div class="card-columns">
         <% @service.images.each do |image| %>
           <div class="item image-wrapper">
-            <a href="" data-fancybox="images" data-type="image">
+            <a href=<%=image%> data-fancybox="gallery">
               <%= image_tag image, class: "d-block img-fluid"%>
             </a> 
           </div>
