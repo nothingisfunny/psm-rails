@@ -12,12 +12,12 @@ services = Service.create([
     name: "Проектирование и дизайн", 
     bullet_points: ["обследования и изыскательные работы", "разработка проектной и рабочей документации", "разработка дизайн проектов", "сметная документация", "генпроектные работы"],
     description: "При разработке проектов специалистами фирмы используются новейшие инструменты проектирования, позволяющие с максимальной точностью и реалистичностью предоставить работу заказчику. Использование новейших технологий и BIM проектирования позволяют добиться максимального результата в кратчайшие сроки.",
-    images: ["https://imgur.com/tRAloKZ.jpg",
-      "https://imgur.com/wwcEB55.jpg",
-      "https://imgur.com/bJlzkxl.jpg",
-      "https://imgur.com/wERndEB.jpg",
-      "https://imgur.com/PmcQKpQ.jpg",
-      "https://imgur.com/IObOmFW.jpg"
+    images: ["https://imgur.com/OhS87zt",
+      "https://imgur.com/IdXdo5D.jpg",
+      "https://imgur.com/o5pWHqr.jpg",
+      "https://imgur.com/6j75wu0.jpg",
+      "https://imgur.com/5bb2Rsn.jpg",
+      "https://imgur.com/EyMZrBw.jpg"
     ]
     },
   {
